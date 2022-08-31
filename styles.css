@@ -1,63 +1,245 @@
-/*Start*/
+html {
+    touch-action: manipulation;
+}
 
+body {
+    margin: 0;
+    word-wrap: anywhere;
+}
 
-/*Default values*/
-div div {display: inline-block;}
-body{font-size: 0.90vw;}
+span {
+    display: inline-block;
+}
 
+lineBreak {
+    display: block;
+}
 
-/*Structures*/
-.main{width:100vw;}
-.copyright{width:100vw;height:5vh;}
-.navigation{width:100vw;height:min(11vh,900px);}
-.footer{position:relative;bottom:0;width:100vw;height:20vh;}
-.absoluteBox{position:absolute;top:max(15vw);margin-left:4vw;padding:6vh 10vh;background-color:rgba(10,10,10,0.5);color:#fff;}
-.anounce{width:100vw;height:80vh;user-select:none;}
-.imageSelectorButton{position:relative;margin-left:4vw;bottom:2.5vh;width:6vw;height:3vh;border-radius:15px;background-color:#fff;}
-.course{width:40vh;height:47.5vh;margin-left:5vw;margin-top:2vh;background-color:#fff;border:1px solid #ccc;border-radius:4px;box-shadow:5px 10px 30px #ddd;}
-.courseIlustration{width:40vh;height:25vh;}
-.courseButton{width:35vh;height:3.5vh;background-color:#090;padding-top:1vh;border-radius:15cm;color:#fff;cursor:pointer;}
+.top {
+    padding: 25px 50px 10px 50px;
+}
 
-/*Text configuration*/
-.lineBreak{display:block;}
+left,
+right {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
 
+right {
+    text-align: center;
+}
 
-/*Text stilings & boldings*/
-.boldText{font-weight:bold;}
-.italic{font-style:italic;}
+.logo {
+    font-size: 45px;
+    user-select: none;
+    letter-spacing: 5px;
+}
 
+.top #logoLines {
+    width: 22.5px;
+    padding: 0 3px 0 0;
+    font-size: 11.5px;
+    text-align: center;
+}
 
-/*Margins*/
-.marginTop2Vh{margin-top:2vh;}
-.marginTop3Vw{margin-top:3vh}
-.leftMargin1vw{margin-left:1vw}
-.leftMargin2vw{margin-left:2vw}
-.leftMargin4vw{margin-left:4vw}
-.leftMargin50vw{margin-left:50vw}
-.noMarginBody{margin:0px;}
-.bottomMargin2Vw{margin-bottom:2vw;}
-.buttonBorderWhite{border:1px solid #fff;padding:0.6vw 2.2vw;border-radius:15px;cursor:pointer;}
+.top #logoLines span.line {
+    height: 4px;
+    width: 22.5px;
+    border-radius: 2px;
+    background: #000;
+}
 
+editable {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #bbb;
+    border-radius: 20.5px;
+    outline: 0;
+    vertical-align: middle;
+    background: #f5f5f5;
+    color: #777;
+    font-size: 14px;
+    letter-spacing: -0.75px;
+    user-select: none;
+    cursor: text;
+}
 
-/*Borders & paddings*/
-.customInput{border: 1px solid #aaa;border-radius:15px;outline:none;}
-.padding0p5Vw{padding:0.5vw;}
+editable.active {
+    color: #000;
+    user-select: text;
+}
 
+.banner {
+    padding: 80px 50px;
+    background-image: url("writing.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
-/*Backgrounds colors & Colors*/
-.grayBackground{background-color:#eee;}
-.grayColor{color:#555}
+box {
+    display: block;
+    width: 350px;
+    padding: 20px 30px;
+    background: #000b;
+    color: #fff;
+    line-height: 1.5em;
+}
 
-/*Font sizes*/
-.fontSize0p75Vh{font-size:0.75vh;}.fontSize1p5Vw{font-size:1.5vw;}
-.fontSize2Vh{font-size:2vh;}
-.fontSize3Vh{font-size:3vh;}
-.fontSize6Vh{font-size:6vh;}
+box span.title {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+}
 
+box.title,
+box span.button {
+    letter-spacing: -1.5px;
+}
 
-/*Lines & Circles & alignments*/
-.horizontalLine{width:92vw;height:0.1vh;background-color:#aaa;margin-left:4vw}
-.alignedCenter{text-align:center;}
+box span.description {
+    font-size: 15px;
+    color: #eee;
+}
 
+box span.button {
+    padding: 8px 25px;
+    border: 1px solid #fff;
+    border-radius: 21px;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    transition: all 0.5s, box-shadow 1s;
+    user-select: none;
+}
 
-/*End*/
+box span.mouseOver {
+    box-shadow: 0px 0px 30px 3px #fffa;
+}
+
+box span.mouseDown {
+    background: #fff;
+    color: #000f;
+}
+
+.myCourses {
+    padding: 40px 50px;
+    background: #eee;
+    text-align: center;
+}
+
+.myCourses div.title {
+    font-size: 25px;
+    text-align: start;
+}
+
+.myCourses horizontalLine {
+    display: block;
+    height: 1px;
+    margin: 20px 0;
+    background: #ddd;
+}
+
+course {
+    display: inline-block;
+    width: 250px;
+    padding: 0 0 15px 0;
+    margin: 10px 20px;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+}
+
+course thumbnailOne {
+    background: url("./courseThumbnailOne.jpg") center;
+}
+
+thumbnailTwo {
+    background: url("./courseThumbnailTwo.jpg") center;
+}
+
+course thumbnailOne,
+course thumbnailTwo {
+    display: block;
+    height: 180px;
+    background-size: cover;
+}
+
+course span.title {
+    display: block;
+    font-size: 25px;
+    color: #333;
+}
+
+course span.description {
+    color: #555;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+
+course span.button {
+    display: inline-block;
+    padding: 8px 70px;
+    border-radius: 17.5px;
+    color: #fff;
+    background: #0a0;
+    cursor: pointer;
+    transition: all 0.5s, box-shadow 1s;
+    user-select: none;
+}
+
+course span.mouseOver {
+    box-shadow: 0px 0px 30px 3px #0a0a;
+}
+
+course span.mouseDown {
+    background: #070;
+}
+
+.bottom {
+    padding: 20px 50px;
+    color: #aaa
+}
+
+.bottom #logoLines {
+    width: 22.5px;
+    padding: 0 3px 0 0;
+    font-size: 11.5px;
+    text-align: center;
+}
+
+.bottom #logoLines span.line {
+    height: 4px;
+    width: 22.5px;
+    border-radius: 2px;
+    background: #aaa;
+}
+
+.bottom span.description {
+    font-size: 15px;
+}
+
+.bottom right right div.title,
+.bottom right left div.title {
+    color: #000;
+}
+
+.bottom right left div.title {
+    font-size: 25px;
+}
+
+.bottom right right div.title {
+    font-size: 25px;
+}
+
+.bottom span.link {
+    margin: 10px 10px 0 10px;
+    cursor: pointer;
+}
+
+.copyright {
+    padding: 15px 50px;
+    margin: 0 0 175px 0;
+    color: #999;
+    background: #ddd;
+}
