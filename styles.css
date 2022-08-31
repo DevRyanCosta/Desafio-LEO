@@ -1,0 +1,63 @@
+/*Start*/
+
+
+/*Default values*/
+div div {display: inline-block;}
+body{font-size: 0.90vw;}
+
+
+/*Structures*/
+.main{width:100vw;}
+.copyright{width:100vw;height:5vh;}
+.navigation{width:100vw;height:min(11vh,900px);}
+.footer{position:relative;bottom:0;width:100vw;height:20vh;}
+.absoluteBox{position:absolute;top:max(15vw);margin-left:4vw;padding:6vh 10vh;background-color:rgba(10,10,10,0.5);color:#fff;}
+.anounce{width:100vw;height:80vh;user-select:none;}
+.imageSelectorButton{position:relative;margin-left:4vw;bottom:2.5vh;width:6vw;height:3vh;border-radius:15px;background-color:#fff;}
+.course{width:40vh;height:47.5vh;margin-left:5vw;margin-top:2vh;background-color:#fff;border:1px solid #ccc;border-radius:4px;box-shadow:5px 10px 30px #ddd;}
+.courseIlustration{width:40vh;height:25vh;}
+.courseButton{width:35vh;height:3.5vh;background-color:#090;padding-top:1vh;border-radius:15cm;color:#fff;cursor:pointer;}
+
+/*Text configuration*/
+.lineBreak{display:block;}
+
+
+/*Text stilings & boldings*/
+.boldText{font-weight:bold;}
+.italic{font-style:italic;}
+
+
+/*Margins*/
+.marginTop2Vh{margin-top:2vh;}
+.marginTop3Vw{margin-top:3vh}
+.leftMargin1vw{margin-left:1vw}
+.leftMargin2vw{margin-left:2vw}
+.leftMargin4vw{margin-left:4vw}
+.leftMargin50vw{margin-left:50vw}
+.noMarginBody{margin:0px;}
+.bottomMargin2Vw{margin-bottom:2vw;}
+.buttonBorderWhite{border:1px solid #fff;padding:0.6vw 2.2vw;border-radius:15px;cursor:pointer;}
+
+
+/*Borders & paddings*/
+.customInput{border: 1px solid #aaa;border-radius:15px;outline:none;}
+.padding0p5Vw{padding:0.5vw;}
+
+
+/*Backgrounds colors & Colors*/
+.grayBackground{background-color:#eee;}
+.grayColor{color:#555}
+
+/*Font sizes*/
+.fontSize0p75Vh{font-size:0.75vh;}.fontSize1p5Vw{font-size:1.5vw;}
+.fontSize2Vh{font-size:2vh;}
+.fontSize3Vh{font-size:3vh;}
+.fontSize6Vh{font-size:6vh;}
+
+
+/*Lines & Circles & alignments*/
+.horizontalLine{width:92vw;height:0.1vh;background-color:#aaa;margin-left:4vw}
+.alignedCenter{text-align:center;}
+
+
+/*End*/
